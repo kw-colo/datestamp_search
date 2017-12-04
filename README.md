@@ -22,4 +22,4 @@ $ pip install praw
 ```
 Next register on reddit using the reddit link in the Resources.  If you need more help on that, you can consult the authentation help in the Resources.  There should be places on the Python script to throw the client id and secret when starting the reddit instance.  Finally, I'd put a test subreddit where the `sub = ` declaration is and run.  The console should prompt you to put in date ranges.
 
-Feel free to contact me if you have any questions
+Feel free to contact me if you have any questions. I'm [/u/wulffguy](https://reddit.com/u/wulffguy) on reddit and [keenan.wulff@colorado.edu](mailto:keenan.wulff@colorado.edu) by email
