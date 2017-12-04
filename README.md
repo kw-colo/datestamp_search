@@ -1,23 +1,20 @@
 # datestamp_search
 A simple and messy datestamp search on reddit using Cloudsearch
 ## Resources
+The two things you'll need from this are the reddit authentication and an IDE. The reddit authentication is at the link below. From this, you'll need to get the id and the secret:
+<https://www.reddit.com/prefs/apps/>
+If you don't have a Python IDE, there are a number that can be downloaded. The easiest one to get is the one that comes packaged with Python, called IDLE. Just head to <https://www.python.org/> and grab it from there.
+
+### Other Resources
+This is the PRAW quick start.  This gives a basis for opening an instance, and what's needed for a read only instance
 <http://praw.readthedocs.io/en/latest/getting_started/quick_start.html>
 
-This is the PRAW quick start.  This gives a basis for opening an instance, and what's needed for a read only instance
-
+This should tell you how to authenticate your script
 <http://praw.readthedocs.io/en/latest/getting_started/authentication.html#oauth>
 
-This should tell you how to authenticate your script
-
-<https://www.reddit.com/prefs/apps/>
-
-This is the reddit-side authentication portal.  You'll need to go through registration here to get your id and secret
-
+Here's some official reddit documentation on the API.  This gives the parameters for the user agent string
 <https://github.com/reddit/reddit/wiki/API>
 
-Here's some official reddit documentation on the API.  This gives the parameters for the user agent string
-
-If you don't have a Python IDE, there are a number that can be downloaded.  I'm using Anaconda through the Spyder IDE (I'm a student who is also using python to do math stuff), but any IDE should work (I haven't experimented with many but PyCharm and the PyDev plugin for Eclipse seem to be pretty popular)
 ## Getting Started
 The first thing you'll need to do is install PRAW.  Through a Python command line, type
 ```
