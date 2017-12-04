@@ -73,7 +73,7 @@ print(end)
 searchstr = "'rule' timestamp:{}..{}".format(start,end)
 
 # This loops through search results and writes them in the open HTML file
-for submission in sub.search(searchstr,syntax='cloudsearch',limit=None):
+for submission in sub.search(searchstr,sort='relevance',syntax='cloudsearch',limit=None):
     file_out.write("<h2>{}</h2>\n".format(submission.title))
     file_out.write("<p>Author: {}</p>\n".format(submission.author))
     file_out.write("<p>Comments: {}</p>\n".format(submission.num_comments))
