@@ -19,15 +19,18 @@ logger.setLevel(logging.DEBUG)
 logger.addHandler(handler)
 
 # Here's the initialization of the 'Reddit' object.  Client ID and secret
-# are given by the authorization on the reddit side.  I'll link to some stuff
-# on the github readme.  The user agent is a string that gives reddit basic
-# information on what you're doing.
+# are given Reddit's app authorization (see the "Resources" section on the readme).
+# The user agent is a string that gives reddit basic information on what you're doing.
+# It doesn't really need to follow a strict syntax, but try to make something similar 
 
-
+# TODO: Replace 'id' and 'secret' with th id and secret that you got from Reddit's app auth
+# TODO: Type in password and username or delete fields (deleting those is acceptable for read-
+#       only applications, which this is by default.
+# TODO: Create user_agent string that is of similar form and reasonably descriptive
 reddit = praw.Reddit(client_id='id',
                      client_secret='secret',
-                     password='Your password (may be only needed if not read only)',
-                     username='Your username (again may only be needed if not read only)',
+                     password='Your password (you can delete this field if read only)',
+                     username='Your username (again only needed if not read only)',
                      user_agent='windows:com.example.datestamp_search:v0.0.1 (by /u/wulffguy)')
 
 # This is just printing out whether you're in read only mode or not
@@ -42,8 +45,8 @@ print("\n")
 # Since I've been the only one using it thus far, it's a bit messy
 
 # This initializes the subreddit you'd like to search through.  I haven't tried
-# it, but I believe that 'all' works as a valid sub if you want to search
-# through all of reddit
+# it, but I believe that 'all' works as a valid sub if you want to search /r/all
+# TODO: Replace "science" with a different sub
 sub = reddit.subreddit("science")
 
 # Here's where the Python console takes inputs for date and converts them into
@@ -70,6 +73,7 @@ print(end)
 
 # Here's the search string.  I'm interested in things involving rule changes on
 # subs, so I put that in here.
+# TODO: Replace 'rule' with your own search string. Don't get rid of the timestamp part
 searchstr = "'rule' timestamp:{}..{}".format(start,end)
 
 # This loops through search results and writes them in the open HTML file
