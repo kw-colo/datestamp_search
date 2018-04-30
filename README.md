@@ -9,6 +9,7 @@ Reddit has changed its search service away from Amazon's Cloudsearch. This has t
 There are only two things you'll need to be able to use this: Authentication from Reddit and an IDE.
 
 The link below is Reddit's Applications page. To use this, you'll need to register it as an application on Reddit's end, then grab the client id, which is the alphanumeric key displayed below the title of the application, and the secret, which is displayed in the details of the the application (you should see it if you hit the edit hyperlink).
+
 <https://www.reddit.com/prefs/apps/>
 
 Finally, if you don't have a Python IDE, there are a number that can be downloaded. The easiest one to get is the one that comes packaged with Python, called IDLE. Just head to <https://www.python.org/> and grab it from there.
